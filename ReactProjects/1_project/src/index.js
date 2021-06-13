@@ -55,7 +55,7 @@ ReactDOM.render(
 );
 ReactDOM.render(
     <footer>
-      Cards
+      @copy; Maftuna Vohidjonovna 2021
     </footer>,
     bodyTag
 );
