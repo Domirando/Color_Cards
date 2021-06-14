@@ -37,6 +37,7 @@ class Card extends React.Component{
 
 ReactDOM.render(
   <div>
+    <div className="bg-white p-12">
     <h1 className="text-center text-4xl pb-5">Cards</h1>
     <Card color="#5c6ac4"/>
     <Card color="#ecc94b"/>
@@ -50,12 +51,10 @@ ReactDOM.render(
     <Card color="#867ae9"/>
     <Card color="#ac66cc"/>
     <Card color="#afb9c8"/>
+    </div>
+    <footer className="bg-gray-300 h-14 text-xl flex justify-center items-center">
+      &copy; Maftuna Vohidjonovna 2021
+    </footer>
   </div>,
-  document.querySelector('#container')
-);
-ReactDOM.render(
-    <footer>
-      @copy; Cards 2021
-    </footer>,
-    document.querySelector('body')
+  document.querySelector('body')
 );
