@@ -15,10 +15,25 @@ class Square extends React.Component{
 }
 
 class Label extends React.Component{
+  constructor(props) {
+    super(props);
+
+    this.state = { copySuccess: '' }
+  }
+
+  copyToClipboard = (e) => {
+    this.props.color.select();
+    document.execCommand('copy');
+    e.target.focus();
+    this.setState({ copySuccess: 'Copied!' });
+  };
+
   render(){
     return(
-      <p className="p-3 m-0 font-bold font-sans">
+      <p idName="color" className="p-3 m-0 flex justify-between font-bold font-sans">
         {this.props.color}
+        <span className="text-blue-500" onClick="this.copyToClipboard">Copy</span>
+        {this.state.copySuccess}
       </p>
     );
   }
