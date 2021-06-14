@@ -32,7 +32,7 @@ class Label extends React.Component{
     return(
       <p idName="color" className="p-3 m-0 flex justify-between font-bold font-sans">
         {this.props.color}
-        <span className="text-blue-500" onClick="this.copyToClipboard">Copy</span>
+        <span className="text-blue-500 cursor-pointer" onClick="this.copyToClipboard">Copy</span>
         {this.state.copySuccess}
       </p>
     );
