@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-let bodyTag = document.getElementsByTagName('body');
+
 class Square extends React.Component{
   render(){
     let squareStyle = {
@@ -55,7 +55,7 @@ ReactDOM.render(
 );
 ReactDOM.render(
     <footer>
-      @copy; Maftuna Vohidjonovna 2021
+      @copy; Cards 2021
     </footer>,
-    bodyTag
+    document.querySelector('body')
 );
